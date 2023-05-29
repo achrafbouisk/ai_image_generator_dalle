@@ -15,4 +15,4 @@ export async function downloadImage(_id, photo) {
   FileSaver.saveAs(photo, `download-${_id}.jpeg`);
 }
 
-export const BASE_URL = "http://localhost:4000/api/v1";
+export const BASE_URL = import.meta.env.VITE_BASE_URL;
